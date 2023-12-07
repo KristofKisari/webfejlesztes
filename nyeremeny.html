@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="reszp_galeria/jquery-3.7.1.min.js"></script>
+    <script src="reszp_galeria/galleria-1.6.1/dist/galleria.min.js"></script>
+    <script src="reszp_galeria/galleria-1.6.1/dist/themes/classic/galleria.classic.js"></script>
+    <script src="javascript.js"></script>
+    <title>Rainbow 6 Siege kezdőknek</title>
+    <link rel="icon" href="kepek/ikon/favicon.ico">
+    <script>
+        $(document).ready(function () {
+        $('.images').galleria(
+        width = 200,
+        height = 200
+        );
+    });
+    </script>
+</head>
+<body>
+    <header>
+        <img class="fokep" src="kepek/hatter/logo.png" alt="A játék logója">
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html"><img class="ikon" src="kepek/ikon/home.png" alt="home ikon"> Menü</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><a href="mapok.html"><img class="ikon" src="kepek/ikon/map.png" alt="map ikon"> Mapok</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><a href="operatorok.html"><img class="ikon" src="kepek/ikon/soldier.png" alt="katona ikon"> Operátorok</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><a href="qviz.html"><img class="ikon" src="kepek/ikon/quiz.png" alt="quiz ikon"> Kvíz</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h2>Rendelés</h2>
+            <form action="#">
+            <article>
+                <p class="tartalom"><label for="cim">Szállítási cím:</label> <input class="szoveg" type="text" id="cim"></p>
+                <p class="tartalom"><label for="datum">Szállítás ideje:</label> <input class="szoveg" type="date" id="datum"></p>
+            </article>
+            <article>
+                <p class="tartalom">Méret:<br>
+                <input type="radio" name="meret" id="s">
+                <label for="s">S</label>
+                <input type="radio" name="meret" id="m">
+                <label for="m">M</label>
+                <input type="radio" name="meret" id="l">
+                <label for="l">L</label>
+                <input type="radio" name="meret" id="xl">
+                <label for="xl">XL</label>
+                </p>
+                <p class="tartalom"><label for="szin">Szín:</label><br>
+                <input type="color" id="szin"></p>
+                
+                
+            </article>
+            <article class="images galleria">      
+                <img src="kepek/polo/ela.jpg" alt="A">
+                <img src="kepek/polo/hibana.jpg" alt="B">
+                <img src="kepek/polo/jackal.jpg" alt="C">
+                <img src="kepek//polo/jager.jpg" alt="D">
+            </article>
+            <article>
+                <p class="tartalom"><label for="tipus">Típus: </label>
+                <select name="verzio" id="verzio" size="1">
+                    <option value="a" id="a"><label for="a">A</label></option>
+                    <option value="b" id="b"><label for="b">B</label></option>
+                    <option value="c" id="c"><label for="c">C</label></option>
+                    <option value="d" id="d"><label for="d">D</label></option>
+                </select>
+                </p>
+            </article>
+            <p>
+                <table>
+                    <tr>
+                        <td><input class="button" type="button" id="bekuld" value="Rendelés" onclick="rendeles()"></td>
+                        <td><input class="button" type="reset" value="Törlés"></td>
+                    </tr>
+                </table>
+            </p>
+        </form>
+        </article>
+    </div>
+    <footer class="lab">
+        Az oldal kizárólag gyakorlásra szolgál.
+    </footer>
+</body>
+</html>

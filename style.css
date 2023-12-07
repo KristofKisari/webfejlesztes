@@ -1,0 +1,245 @@
+/*Általános*/
+* {
+    box-sizing: border-box;
+    }
+
+html {
+    padding: 0px;
+    margin: 0px;
+}
+
+header{
+    padding: 2px;
+    background-color: #2F3B4A;
+    text-align: center;
+    flex:1 1 100%;
+    width: 100%;
+}
+
+body {
+    background-image: url("kepek/hatter/background.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+}
+
+article{
+    background-color: #2F3B4A;
+    color: #C9D2D9;
+    text-align: justify;
+	flex:1 1 100%;
+    justify-content: space-around;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+/*Lista*/
+nav {
+    padding: 8px;
+	flex:1 1 100%;
+    
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li a {
+    display:block;
+    padding: 20px;
+    margin-bottom: 0;
+    color: #C9D2D9;
+    background-color: #2F3B4A;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Rainbow";
+}
+
+nav ul li a.active {
+    background-color:#0859d1;
+}
+
+nav li a:hover {
+    background-color: #9c4507;
+    color:black;
+    transform: scale(1.03);
+    
+}
+/*Szöveg*/
+h2{
+    padding: 10px;
+    font-family: "Rainbow";
+    font-size: 40px;
+}
+.jobb{
+    text-align: justify;
+    text-align-last: right;
+}
+
+p.tartalom{
+    padding: 10px;
+    text-indent: 1.1em;
+    font-size: 20px;
+    font-family: "CaviarDreams";
+}
+input.text{
+    color: #2F3B4A;
+    border-color: white;
+    color: white;
+}
+
+form input.szoveg{
+    background-color: #2F3B4A;
+    border-color: #C9D2D9;
+    color: #C9D2D9;
+    border-radius: 20px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.541);
+}
+
+.oldalak{
+    text-align: center;
+    color: #9c4507;
+}
+
+.oldalak2{
+    text-align: center;
+    color:#0859d1;
+}
+
+/*Képek*/
+.galleria {
+    margin: auto;
+    min-width: 300px;
+    min-height: 300px;
+    width: 30vw;
+    height: 30vw;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+img.fokep{
+    width: 40vw;
+    height: auto;
+}
+
+img.ikon{
+    height: 20px;
+}
+
+img.operatorkep{
+    height: 50px;
+}
+
+img.kviz{
+    width: 500px;
+}
+
+/*Képgaléria*/
+div.gallery {
+    margin: 8px;
+    float:left;
+    width: auto;
+  }
+  
+  div.gallery:hover {
+    background-color: #9c4507;
+  }
+  
+  div.gallery img {
+    width: 250px;
+    height: 150px;
+  }
+  
+  div.nev {
+    padding: 20px;
+    text-align: center;
+    color: #C9D2D9;
+    font-size: 15px;
+    font-family: "CaviarDreams";
+    background-color: #2F3B4A;
+  }
+  footer.lab{
+    font-size: 20px;
+    font-family: "CaviarDreams";
+    color: #C9D2D9;
+    background-color: #2F3B4A;
+    width: auto;
+    padding: 20px;
+    text-align: center;
+    margin-top: 100px;
+  }
+
+/*Flexbox*/
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+ }
+ 
+.container>*{
+    margin-top:5%;
+    margin-left: 0%;
+}
+
+ @media all and (min-width: 600px) {
+    nav {
+  flex-basis: 100%;
+    }
+    article {
+ flex-basis:73%;
+    }
+    aside {
+  flex-basis:100%;
+    }
+}
+
+@media all and (min-width: 798px) {
+    nav {
+        flex-basis: 23%;
+    }
+    article {
+  flex-basis:48%;
+    }
+    aside {
+  flex-basis: 23%;
+    }
+}
+
+/*Fontok*/
+@font-face {
+    font-family: "CaviarDreams";
+    src: url("fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf");
+    font-weight: bold;
+    font-style: normal;
+ }
+
+ @font-face {
+    font-family: "Rainbow";
+    src: url("fonts/ghostclan.ttf");
+ }
+
+ /*Egyéb*/
+ p.video{
+    text-align: justify;
+    padding: 8px;
+}
+
+input.button{
+    background-color: #2F3B4A;
+    color: #C9D2D9;
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    font-family: "CaviarDreams";
+    font-size: 20px;
+}

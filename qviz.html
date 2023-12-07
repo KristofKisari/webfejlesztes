@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+    <title>Rainbow 6 Siege kezdőknek</title>
+    <link rel="icon" href="kepek/ikon/favicon.ico">
+</head>
+<body>
+    <header>
+        <img class="fokep" src="kepek/hatter/logo.png" alt="A játék logója">
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html"><img class="ikon" src="kepek/ikon/home.png" alt="home ikon"> Menü</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><a href="mapok.html"><img class="ikon" src="kepek/ikon/map.png" alt="map ikon"> Mapok</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><a href="operatorok.html"><img class="ikon" src="kepek/ikon/soldier.png" alt="katona ikon">Operátorok</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><a href="qviz.html" class="active"><img class="ikon" src="kepek/ikon/quiz.png" alt="quiz ikon">Kvíz</a></li>
+            </ul>
+        </nav>
+        <article>
+        <p class="tartalom">Ezen az oldalon lehetőséged van egy kvíz segítségével tesztelned a tudásodat, amiben ha 8-nál több pontot szerzel, egy pólót nyerhetsz.</p>
+        <form action="#" method="post">
+        <p class="tartalom">Név: <input class="szoveg" type="Text" size="30" id="nev"></p>
+        <p class="tartalom">Email: <input class="szoveg" type="email" size="30" id="email"></p>
+        
+            <p class="tartalom">1. Kérdés<br>
+            Mikor jelent meg a játék? (év, hónap)<br>
+            <input class="szoveg" type="month" id="release"></p>
+            <p class="tartalom">2. Kérdés<br>
+            Hány operátorral indult a játék?<br>
+            <input class="szoveg" type="number" id="operatorint"></p>
+            <p class="tartalom">3. Kérdés<br>
+            Melyik platformokon jelent meg először a játék?<br>
+            <input type="checkbox" name="platform" id="pc"> PC <br>
+            <input type="checkbox" name="platform" id="ps3"> Playstation 3 <br>
+            <input type="checkbox" name="platform" id="xb1"> Xbox One <br>
+            <input type="checkbox" name="platform" id="wiiu"> Wii U<br>
+            <input type="checkbox" name="platform" id="ps4"> Playstation 4 <br>
+            <input type="checkbox" name="platform" id="xb360"> Xbox 360 <br>            
+            </p>
+            <p class="tartalom">4. kérdés <br>
+            Hanyadik év hanyadik szezonját kezdi meg 2023-ban a játék decemberben?<br>
+            <input class="szoveg" type="number" id="ev" size="5">. év <input class="szoveg" type="number" id="szezon" size="5">. szezon.
+            </p>
+            <p class="tartalom">5. Kérdés <br>
+            Melyik kategóriába tartozik a játék?<br>
+            <select name="genre" id="genre" size="1">
+                <option value="tps" id="tps">TPS</option>
+                <option value="racing" id="racing">Racing</option>
+                <option value="rpg" id="rpg">RPG</option>
+                <option value="fps" id="fps">FPS</option>
+                <option value="moba" id="moba">MOBA</option>
+            </select>
+            </p>
+            <p class="tartalom">6. Kérdés <br>
+            A játékban egy operátor maximum 4 sebességes lehet. <br>
+            <input type="radio" name="kerdes" id="i"> Igaz <br>
+            <input type="radio" name="kerdes" id="h"> Hamis
+            </p>
+            <p class="tartalom">7. Kérdés <br>
+            A védekezőknek a bombát vagy a defusert kell hatástalanítaniuk?<br>
+            <input type="radio" name="hatas" id="bomb"> Bomba <br>
+            <input type="radio" name="hatas" id="defu"> Defuser
+            </p>
+            <p class="tartalom">8. Kérdés
+            Melyik mapon található a következő szoba?<br>
+            <img class="kviz" src="kepek/kviz/roompic.jpg" alt="billiard a coastlineon"><br>
+            <select name="map" id="map" size="1">
+                <option value="house" id="house">House</option>
+                <option value="villa" id="villa">Villa</option>
+                <option value="coastline" id="coastline">Coastline</option>
+                <option value="hereford" id="hereford">Hereford Base</option>
+                <option value="club" id="club">Club House</option>
+            </select>
+            </p>
+            <p class="tartalom">9. Kérdés <br>
+            Melyik operátor látható a képen?<br>
+            <img src="kepek/kviz/operatorpic.png" alt="kép tachankáról"><br>
+            <select class="szoveg" name="operator" id="operator" size="1">
+                <option value="ash" id="ash">Ash</option>
+                <option value="lesion" id="lesion">Lesion</option>
+                <option value="finka" id="finka">Finka</option>
+                <option value="tachanka" id="tachanka">Tachanka</option>
+                <option value="fuze" id="fuze">Fuze</option>
+            </select>
+            </p>
+            <p class="tartalom">10. kérdés <br>
+            Melyik fegyver látható a képen?<br>
+            <img class="kviz" src="kepek/kviz/gadgetpic.jpg" alt="capitao gadgetje"><br>
+            <select name="fegyver" id="fegyver">
+                <option value="cbow" id="crossbow">Crossbow</option>
+                <option value="ntwpn" id="ntwpn">Ez nem egy fegyver</option>
+                <option value="nyilas" id="nyilas">Valami nyilas cucc</option>
+                <option value="hl" id="hl">Ez nem a Half-Life-ból van?</option>
+            </select>
+            </p>
+            <p class="tartalom">Bónusz kérdés <br>
+            Melyik a kedvenc operátorod?<br>
+            <input class="szoveg" type="text" name="favop" id="favop">
+            </p>
+            <p>
+                <table>
+                    <tr>
+                        <td><input class="button" type="button" id="bekuld" value="Beküldés" onclick="bekuldes()"></td>
+                        <td><input class="button" type="reset" value="Törlés"></td>
+                    </tr>
+                </table>
+            </p>
+        </form>
+    </article>
+    </div>
+    <footer class="lab">
+        Az oldal kizárólag gyakorlásra szolgál.
+    </footer>
+</body>
+</html>
